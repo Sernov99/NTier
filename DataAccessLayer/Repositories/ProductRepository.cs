@@ -25,8 +25,6 @@ namespace DataAccessLayer.Repositories
 
         public Product Get(int id)
         {
-            try
-            {
                 Product result = new Product();
 
                 string comm = "SELECT id FROM tbl_products WHERE id = " + id.ToString();
@@ -34,11 +32,8 @@ namespace DataAccessLayer.Repositories
                 comm = "SELECT name FROM tbl_products WHERE id =" + id.ToString();
                 result.Name = db.Get(comm);
                 return result;
-            }
-            catch
-            {
-                return null;
-            }
+            
+           
         }
 
         public List<Product> GetAll()
@@ -62,6 +57,7 @@ namespace DataAccessLayer.Repositories
                   
                 }
             }
+            dr.Close();
             return result;
 
         }

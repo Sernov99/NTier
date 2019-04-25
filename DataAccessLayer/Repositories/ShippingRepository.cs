@@ -23,7 +23,7 @@ namespace DataAccessLayer.Repositories
   
             string command = "INSERT INTO `tbl_shippings` (`address`, `firstname`, `lastname`, `product_id`) VALUES (" + "'" + item.Address + "'," +
                       "'" + item.FirstName + "'," + "'" + item.LastName
-                    + "'," + "'" + item.Address + "');";
+                    + "'," + "'" + item.Product_id + "');";
             db.Create(command);
             
         }

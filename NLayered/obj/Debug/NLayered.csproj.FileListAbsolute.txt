@@ -1,1 +1,14 @@
 C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\NLayered\bin\Debug\NLayered.exe.config
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\NLayered\obj\Debug\NLayered.csprojResolveAssemblyReference.cache
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\NLayered\obj\Debug\NLayered.Form1.resources
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\NLayered\obj\Debug\NLayered.Properties.Resources.resources
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\NLayered\obj\Debug\NLayered.csproj.GenerateResource.Cache
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\NLayered\bin\Debug\NLayered.exe
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\NLayered\bin\Debug\NLayered.pdb
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\NLayered\bin\Debug\BusinessAccessLayer.dll
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\NLayered\bin\Debug\DataAccessLayer.dll
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\NLayered\bin\Debug\MySql.Data.dll
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\NLayered\bin\Debug\BusinessAccessLayer.pdb
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\NLayered\bin\Debug\DataAccessLayer.pdb
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\NLayered\obj\Debug\NLayered.exe
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\NLayered\obj\Debug\NLayered.pdb

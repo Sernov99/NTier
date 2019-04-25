@@ -8,6 +8,7 @@ namespace BusinessAccessLayer.DTO
 {
     public class ProductDTO
     {
+        public string Name { get; set; }
         public int ID { get; set; }
     }
 }

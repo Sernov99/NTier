@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using BusinessAccessLayer.DTO;
 using DataAccessLayer.Enteties;
 using DataAccessLayer.Repositories;
+using BusinessAccessLayer.Infrastructure;
+using AutoMapper;
 
 namespace BusinessAccessLayer.Services
 {
@@ -21,31 +23,63 @@ namespace BusinessAccessLayer.Services
             product_repo = new ProductRepository();
         }
 
-        ProductDTO IShippingService.GetProduct(int? id)
+       public ProductDTO GetProduct(int id)
         {
-            throw new NotImplementedException();
+            ProductDTO tmp = new ProductDTO();
+            Product tmp1 = product_repo.Get(id);
+            tmp.ID = tmp1.ID;
+            tmp.Name = tmp1.Name;
+            return tmp;
         }
 
         public List<ProductDTO> GetProducts()
         {
-            throw new NotImplementedException();
+            List <Product> all_products = product_repo.GetAll();
+            List<ProductDTO> all_products_result = new List <ProductDTO>();
+
+            for (var i = 0; i < all_products.Count; i++)
+            {
+
+                ProductDTO tmp = new ProductDTO();
+                tmp.ID = all_products[i].ID;
+                tmp.Name = all_products[i].Name;
+                all_products_result.Add(tmp);
+            }
+
+            return all_products_result;
+
+                
         }
 
         public void MakeShipping(DTO.ShippingDTO shippingDto)
         {
-            //TODO: Data Validation
+            
             Product p = product_repo.Get(shippingDto.Product_id);
-            if(p == null)
+
+            if (p == null)
             {
-                throw new NotImplementedException();
+                throw new ValidationException("Error phone ID!","");
             }
 
-            ////////////////////
-            DataAccessLayer.Enteties.Shipping newshp = new DataAccessLayer.Enteties.Shipping();
+            Shipping newshp = new Shipping();
+            newshp.Product_id = shippingDto.Product_id;
+            if (shippingDto.FirstName == null)
+            {
+                throw new ValidationException("Error phone First Name!", "");
+            }
+            if (shippingDto.LastName==null)
+            {
+                throw new ValidationException("Error Last Name!", "");
+            }
+            if (shippingDto.Address==null)
+            {
+                throw new ValidationException("Error Address!", "");
+            }
+
             newshp.FirstName = shippingDto.FirstName;
             newshp.LastName = shippingDto.LastName;
             newshp.Address = shippingDto.Address;
-            newshp.Product_id = shippingDto.Product_id;
+            
             shippings_repo.Create(newshp);
 
         }

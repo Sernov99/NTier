@@ -6,3 +6,6 @@ C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\BusinessAccessLayer\bin\De
 C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.csprojResolveAssemblyReference.cache
 C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.dll
 C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.pdb
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\BusinessAccessLayer\bin\Debug\AutoMapper.dll
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\BusinessAccessLayer\bin\Debug\AutoMapper.pdb
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\BusinessAccessLayer\bin\Debug\AutoMapper.xml
