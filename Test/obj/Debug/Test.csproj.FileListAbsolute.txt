@@ -16,3 +16,5 @@ C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\Test\bin\Debug\DataAccessL
 C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\Test\bin\Debug\MySql.Data.dll
 C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\Test\bin\Debug\DataAccessLayer.pdb
 C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\Test\bin\Debug\BusinessAccessLayer.dll
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\Test\bin\Debug\BusinessAccessLayer.pdb

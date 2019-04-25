@@ -12,10 +12,15 @@ namespace DataAccessLayer.Repositories
     public class ShippingRepository : IRepository<Shipping>
     {
         DBContext db = new DBContext();
+        
+        public ShippingRepository()
+        {
+            db.openConnection();
+        }
 
         public void Create(Shipping item)
         {
-            db.openConnection();
+  
             string command = "INSERT INTO `tbl_shippings` (`address`, `firstname`, `lastname`, `product_id`) VALUES (" + "'" + item.Address + "'," +
                       "'" + item.FirstName + "'," + "'" + item.LastName
                     + "'," + "'" + item.Address + "');";

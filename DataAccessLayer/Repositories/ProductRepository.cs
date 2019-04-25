@@ -13,6 +13,11 @@ namespace DataAccessLayer.Repositories
     public class ProductRepository : IRepository<Product>
     {
         DBContext db = new DBContext();
+        public ProductRepository()
+        {
+            db.openConnection();
+        }
+
         public void Create(Product item)
         {
             throw new NotImplementedException();
@@ -20,13 +25,20 @@ namespace DataAccessLayer.Repositories
 
         public Product Get(int id)
         {
-            Product result = new Product();
-            db.openConnection();
-            string comm = "SELECT id FROM tbl_products WHERE id = " + id.ToString();
-            result.ID = Int32.Parse(db.Get(comm));
-            comm = "SELECT name FROM tbl_products WHERE id =" + id.ToString();
-            result.Name = db.Get(comm);
-            return result;
+            try
+            {
+                Product result = new Product();
+
+                string comm = "SELECT id FROM tbl_products WHERE id = " + id.ToString();
+                result.ID = Int32.Parse(db.Get(comm));
+                comm = "SELECT name FROM tbl_products WHERE id =" + id.ToString();
+                result.Name = db.Get(comm);
+                return result;
+            }
+            catch
+            {
+                return null;
+            }
         }
 
         public List<Product> GetAll()

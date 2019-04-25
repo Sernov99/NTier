@@ -1,5 +1,6 @@
-﻿using DataAccessLayer.Enteties;
-using DataAccessLayer.Repositories;
+﻿
+using BusinessAccessLayer.DTO;
+using BusinessAccessLayer.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,14 +13,15 @@ namespace Test
     {
         static void Main(string[] args)
         {
-            Shipping shp = new Shipping();
-            shp.Address = "adsa";
-            ShippingRepository repo = new ShippingRepository();
+            ShippingService srv = new ShippingService();
 
-            ProductRepository repo1 = new ProductRepository();
-            Console.WriteLine(repo1.GetAll().ElementAt(1).Name);
-            Console.ReadLine();
-            repo.Create(shp);
+            ShippingDTO shp = new ShippingDTO();
+            shp.Address = "asd";
+            shp.FirstName = "dasdqdwadqw";
+            shp.LastName = "Asdasd";
+            shp.Product_id = 2;
+
+            srv.MakeShipping(shp);
         }
     }
 }

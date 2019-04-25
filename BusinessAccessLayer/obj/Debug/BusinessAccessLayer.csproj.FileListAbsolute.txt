@@ -1,0 +1,8 @@
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\BusinessAccessLayer\bin\Debug\BusinessAccessLayer.dll
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\BusinessAccessLayer\bin\Debug\BusinessAccessLayer.pdb
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\BusinessAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\BusinessAccessLayer\bin\Debug\MySql.Data.dll
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\BusinessAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.dll
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.pdb
