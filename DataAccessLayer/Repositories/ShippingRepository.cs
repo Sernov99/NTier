@@ -1,6 +1,7 @@
 ﻿using DataAccessLayer.EF;
 using DataAccessLayer.Enteties;
 using DataAccessLayer.Interfaces;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,7 +36,30 @@ namespace DataAccessLayer.Repositories
 
         public List<Shipping> GetAll()
         {
-            throw new NotImplementedException();
+            List<Shipping> result = new List<Shipping>();
+
+            MySqlDataReader dr = db.GetAll();
+            if (dr.HasRows)
+            {
+                int count = dr.FieldCount;
+
+                while (dr.Read())
+                {
+                    for (var i = 4; i < count; i += 2)
+                    {
+                        Shipping tmp = new Shipping();
+                        tmp.Address= dr.GetValue(i - 4).ToString();
+                        tmp.FirstName = dr.GetValue(i-3).ToString();
+                        tmp.LastName = dr.GetValue(i-2).ToString();
+                        tmp.Address = dr.GetValue(i - 1).ToString();
+                        tmp.Product_id = Int32.Parse(dr.GetValue(i).ToString());
+                        result.Add(tmp);
+                    }
+
+                }
+            }
+            dr.Close();
+            return result;
         }
     }
 }

@@ -58,20 +58,20 @@ namespace BusinessAccessLayer.Services
 
             if (p == null)
             {
-                throw new ValidationException("Error phone ID!","");
+                throw new ValidationException("Error product ID!","");
             }
 
             Shipping newshp = new Shipping();
             newshp.Product_id = shippingDto.Product_id;
-            if (shippingDto.FirstName == null)
+            if (shippingDto.FirstName == "")
             {
                 throw new ValidationException("Error phone First Name!", "");
             }
-            if (shippingDto.LastName==null)
+            if (shippingDto.LastName== "")
             {
                 throw new ValidationException("Error Last Name!", "");
             }
-            if (shippingDto.Address==null)
+            if (shippingDto.Address== "")
             {
                 throw new ValidationException("Error Address!", "");
             }

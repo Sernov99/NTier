@@ -27,11 +27,17 @@ namespace DataAccessLayer.Repositories
         {
                 Product result = new Product();
 
+            try {
                 string comm = "SELECT id FROM tbl_products WHERE id = " + id.ToString();
                 result.ID = Int32.Parse(db.Get(comm));
                 comm = "SELECT name FROM tbl_products WHERE id =" + id.ToString();
                 result.Name = db.Get(comm);
                 return result;
+            }
+            catch
+            {
+                return null;
+            }
             
            
         }

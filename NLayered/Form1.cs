@@ -3,12 +3,6 @@ using BusinessAccessLayer.Infrastructure;
 using BusinessAccessLayer.Services;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace NLayered
@@ -23,7 +17,8 @@ namespace NLayered
         {
             InitializeComponent();
             
-            lproducts = srv.GetProducts();           
+            lproducts = srv.GetProducts();   
+        
             foreach (var item in lproducts)
             {
                 comboBox1.Items.Add(item.Name);
@@ -46,9 +41,10 @@ namespace NLayered
            
             try {
                 srv.MakeShipping(shp);
-
+                label5.Text = "Done!";
             }
             catch (ValidationException ex){
+                label5.Text = ex.Message;
                 return;
             }
 
