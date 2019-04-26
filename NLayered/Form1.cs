@@ -1,6 +1,7 @@
 ﻿using BusinessAccessLayer.DTO;
 using BusinessAccessLayer.Infrastructure;
 using BusinessAccessLayer.Services;
+using Ninject.Modules;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
@@ -17,7 +18,8 @@ namespace NLayered
         {
             InitializeComponent();
             
-            lproducts = srv.GetProducts();   
+   
+           lproducts = srv.GetProducts();   
         
             foreach (var item in lproducts)
             {
@@ -29,7 +31,7 @@ namespace NLayered
         private void button1_Click(object sender, EventArgs e)
         {
 
-            ShippingDTO shp = new ShippingDTO();
+           ShippingDTO shp = new ShippingDTO();
             try {
                 shp.Address = textBox_address.Text;
                 shp.FirstName = textBox_fn.Text;

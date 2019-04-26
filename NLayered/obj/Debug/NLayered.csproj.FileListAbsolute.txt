@@ -12,3 +12,5 @@ C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\NLayered\bin\Debug\Busines
 C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\NLayered\bin\Debug\DataAccessLayer.pdb
 C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\NLayered\obj\Debug\NLayered.exe
 C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\NLayered\obj\Debug\NLayered.pdb
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\NLayered\bin\Debug\Ninject.dll
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\NLayered\bin\Debug\Ninject.xml

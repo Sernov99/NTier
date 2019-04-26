@@ -9,24 +9,24 @@ using DataAccessLayer.Enteties;
 using DataAccessLayer.Repositories;
 using BusinessAccessLayer.Infrastructure;
 using AutoMapper;
+using DataAccessLayer.Interfaces;
 
 namespace BusinessAccessLayer.Services
 {
     public class ShippingService : IShippingService
     {
-        ShippingRepository shippings_repo;
-        ProductRepository product_repo;
+        IUnitOfWork DataBase { get; set; }
 
-        public ShippingService(string connectionstring)
+        public ShippingService(string connectionStr)
         {
-            shippings_repo = new ShippingRepository(connectionstring);
-            product_repo = new ProductRepository(connectionstring);
+            DataBase = new EFUnitOfWork(connectionStr);
         }
 
        public ProductDTO GetProduct(int id)
         {
+
             ProductDTO tmp = new ProductDTO();
-            Product tmp1 = product_repo.Get(id);
+            Product tmp1 = DataBase.Products.Get(id);
             tmp.ID = tmp1.ID;
             tmp.Name = tmp1.Name;
             return tmp;
@@ -34,7 +34,7 @@ namespace BusinessAccessLayer.Services
 
         public List<ProductDTO> GetProducts()
         {
-            List <Product> all_products = product_repo.GetAll();
+            List <Product> all_products = DataBase.Products.GetAll();
             List<ProductDTO> all_products_result = new List <ProductDTO>();
 
             for (var i = 0; i < all_products.Count; i++)
@@ -48,13 +48,14 @@ namespace BusinessAccessLayer.Services
 
             return all_products_result;
 
+
                 
         }
 
         public void MakeShipping(DTO.ShippingDTO shippingDto)
         {
             
-            Product p = product_repo.Get(shippingDto.Product_id);
+            Product p = DataBase.Products.Get(shippingDto.Product_id);
 
             if (p == null)
             {
@@ -79,8 +80,8 @@ namespace BusinessAccessLayer.Services
             newshp.FirstName = shippingDto.FirstName;
             newshp.LastName = shippingDto.LastName;
             newshp.Address = shippingDto.Address;
-            
-            shippings_repo.Create(newshp);
+
+            DataBase.Shippings.Create(newshp);
 
         }
 

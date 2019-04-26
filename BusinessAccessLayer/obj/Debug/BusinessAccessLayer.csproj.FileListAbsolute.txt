@@ -9,3 +9,5 @@ C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\BusinessAccessLayer\obj\De
 C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\BusinessAccessLayer\bin\Debug\AutoMapper.dll
 C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\BusinessAccessLayer\bin\Debug\AutoMapper.pdb
 C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\BusinessAccessLayer\bin\Debug\AutoMapper.xml
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\BusinessAccessLayer\bin\Debug\Ninject.dll
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\BusinessAccessLayer\bin\Debug\Ninject.xml

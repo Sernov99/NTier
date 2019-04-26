@@ -12,11 +12,11 @@ namespace DataAccessLayer.Repositories
 {
     public class ShippingRepository : IRepository<Shipping>
     {
-        DBContext db = new DBContext();
+        DBContext db;
         
-        public ShippingRepository(string connectionstring)
+        public ShippingRepository(DBContext db)
         {
-            db.openConnection(connectionstring);
+            this.db = db;
         }
 
         public void Create(Shipping item)

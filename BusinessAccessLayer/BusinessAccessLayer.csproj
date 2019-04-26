@@ -34,6 +34,10 @@
       <HintPath>..\packages\AutoMapper.8.0.0\lib\netstandard2.0\AutoMapper.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Ninject, Version=3.3.4.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.3.4\lib\net45\Ninject.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,6 +50,7 @@
   <ItemGroup>
     <Compile Include="DTO\ProductDTO.cs" />
     <Compile Include="DTO\ShippingDTO.cs" />
+    <Compile Include="Infrastructure\ServiceModule .cs" />
     <Compile Include="Infrastructure\ValidationException.cs" />
     <Compile Include="Interfaces\IShippingService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

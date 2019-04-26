@@ -12,10 +12,10 @@ namespace DataAccessLayer.Repositories
 {
     public class ProductRepository : IRepository<Product>
     {
-        DBContext db = new DBContext();
-        public ProductRepository(string connectionstring)
+        DBContext db;
+        public ProductRepository(DBContext db)
         {
-            db.openConnection(connectionstring);
+            this.db = db;
         }
 
         public void Create(Product item)
