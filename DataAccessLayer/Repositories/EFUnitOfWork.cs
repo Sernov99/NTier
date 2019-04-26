@@ -42,7 +42,7 @@ namespace DataAccessLayer.Repositories
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            db.closeConnection();
         }
     }
     

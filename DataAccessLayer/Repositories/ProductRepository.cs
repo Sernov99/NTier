@@ -20,7 +20,8 @@ namespace DataAccessLayer.Repositories
 
         public void Create(Product item)
         {
-            throw new NotImplementedException();
+            string comm = "INSERT INTO tbl_products (Name) VALUES (" + item.Name + ")";
+            db.Create(comm);
         }
 
         public Product Get(int id)

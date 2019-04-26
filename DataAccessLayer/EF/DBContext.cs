@@ -13,8 +13,14 @@ namespace DataAccessLayer.EF
 
         public DBContext(string connectionString)
         {
-            this.conn = new MySqlConnection(connectionString);
-            this.conn.Open();
+            try {
+                this.conn = new MySqlConnection(connectionString);
+                this.conn.Open();
+            }
+            catch
+            {
+
+            }
         }
 
         public void closeConnection()

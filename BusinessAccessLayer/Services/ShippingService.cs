@@ -26,23 +26,22 @@ namespace BusinessAccessLayer.Services
         {
 
             ProductDTO tmp = new ProductDTO();
-            Product tmp1 = DataBase.Products.Get(id);
-            tmp.ID = tmp1.ID;
-            tmp.Name = tmp1.Name;
+            tmp.ID = DataBase.Products.Get(id).ID;
+            tmp.Name = DataBase.Products.Get(id).Name;
             return tmp;
         }
 
         public List<ProductDTO> GetProducts()
         {
-            List <Product> all_products = DataBase.Products.GetAll();
+        
             List<ProductDTO> all_products_result = new List <ProductDTO>();
 
-            for (var i = 0; i < all_products.Count; i++)
+            for (var i = 0; i < DataBase.Products.GetAll().Count; i++)
             {
 
                 ProductDTO tmp = new ProductDTO();
-                tmp.ID = all_products[i].ID;
-                tmp.Name = all_products[i].Name;
+                tmp.ID = DataBase.Products.GetAll()[i].ID;
+                tmp.Name = DataBase.Products.GetAll()[i].Name;
                 all_products_result.Add(tmp);
             }
 
@@ -52,12 +51,11 @@ namespace BusinessAccessLayer.Services
                 
         }
 
-        public void MakeShipping(DTO.ShippingDTO shippingDto)
+        public void MakeShipping(ShippingDTO shippingDto)
         {
-            
-            Product p = DataBase.Products.Get(shippingDto.Product_id);
+              
 
-            if (p == null)
+            if (DataBase.Products.Get(shippingDto.Product_id) == null)
             {
                 throw new ValidationException("Error product ID!","");
             }
