@@ -15,7 +15,8 @@ namespace NLayered
 {
     public partial class Form1 : Form
     {
-        ShippingService srv = new ShippingService();
+        static string connectionString = "datasource=10.8.0.1;port=3306;username=for_progs;password=;database=Shipping_mon;";
+        ShippingService srv = new ShippingService(connectionString);
         List<ProductDTO> lproducts = new List<ProductDTO>();
 
         public Form1()

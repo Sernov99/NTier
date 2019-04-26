@@ -13,9 +13,9 @@ namespace DataAccessLayer.Repositories
     {
         DBContext db = new DBContext();
         
-        public ShippingRepository()
+        public ShippingRepository(string connectionstring)
         {
-            db.openConnection();
+            db.openConnection(connectionstring);
         }
 
         public void Create(Shipping item)

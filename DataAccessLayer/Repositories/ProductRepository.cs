@@ -13,9 +13,9 @@ namespace DataAccessLayer.Repositories
     public class ProductRepository : IRepository<Product>
     {
         DBContext db = new DBContext();
-        public ProductRepository()
+        public ProductRepository(string connectionstring)
         {
-            db.openConnection();
+            db.openConnection(connectionstring);
         }
 
         public void Create(Product item)
@@ -39,7 +39,7 @@ namespace DataAccessLayer.Repositories
         public List<Product> GetAll()
         {
             List<Product> result = new List<Product>();
-            db.openConnection();
+  
             MySqlDataReader dr = db.GetAll();
             if (dr.HasRows)
             {

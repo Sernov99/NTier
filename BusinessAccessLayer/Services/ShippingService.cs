@@ -17,10 +17,10 @@ namespace BusinessAccessLayer.Services
         ShippingRepository shippings_repo;
         ProductRepository product_repo;
 
-        public ShippingService()
+        public ShippingService(string connectionstring)
         {
-            shippings_repo = new ShippingRepository();
-            product_repo = new ProductRepository();
+            shippings_repo = new ShippingRepository(connectionstring);
+            product_repo = new ProductRepository(connectionstring);
         }
 
        public ProductDTO GetProduct(int id)

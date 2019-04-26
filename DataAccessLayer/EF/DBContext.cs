@@ -10,9 +10,9 @@ namespace DataAccessLayer.EF
     public class DBContext
     {
         private MySqlConnection conn;
-        public void openConnection()
+        public void openConnection(string connectionString)
         {
-            string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=userdb;";
+            
             this.conn = new MySqlConnection(connectionString);
             this.conn.Open();
         }
