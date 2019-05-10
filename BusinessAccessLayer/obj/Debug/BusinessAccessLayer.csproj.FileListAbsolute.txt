@@ -24,3 +24,16 @@ C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\6\NLayered\BusinessAccessLayer\bin\Debu
 C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\6\NLayered\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.csprojResolveAssemblyReference.cache
 C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\6\NLayered\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.dll
 C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\6\NLayered\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.pdb
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\Patterns\NLayered\BusinessAccessLayer\bin\Debug\BusinessAccessLayer.dll
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\Patterns\NLayered\BusinessAccessLayer\bin\Debug\BusinessAccessLayer.pdb
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\Patterns\NLayered\BusinessAccessLayer\bin\Debug\AutoMapper.dll
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\Patterns\NLayered\BusinessAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\Patterns\NLayered\BusinessAccessLayer\bin\Debug\Ninject.dll
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\Patterns\NLayered\BusinessAccessLayer\bin\Debug\MySql.Data.dll
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\Patterns\NLayered\BusinessAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\Patterns\NLayered\BusinessAccessLayer\bin\Debug\AutoMapper.pdb
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\Patterns\NLayered\BusinessAccessLayer\bin\Debug\AutoMapper.xml
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\Patterns\NLayered\BusinessAccessLayer\bin\Debug\Ninject.xml
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\Patterns\NLayered\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\Patterns\NLayered\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.dll
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\Patterns\NLayered\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.pdb

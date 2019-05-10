@@ -16,8 +16,16 @@ namespace BusinessAccessLayer.Services
     public class ShippingService : IShippingService
     {
         IUnitOfWork DataBase { get; set; }
+        private static ShippingService instance;
+        public static ShippingService getInstance(string connectionStr)
+        {
+            if (instance == null)
+                instance = new ShippingService(connectionStr);
+            return instance;
+        }
 
-        public ShippingService(string connectionStr)
+
+        private ShippingService(string connectionStr)
         {
             DataBase = new EFUnitOfWork(connectionStr);
         }
