@@ -7,10 +7,8 @@ using System.Threading.Tasks;
 
 namespace BusinessAccessLayer.Interfaces
 {
-    public interface IShippingService
+    interface IProductService
     {
-        void MakeShipping(ShippingDTO shippingDto);
-        ProductDTO GetProduct(int id);
-        
+        List<ProductDTO> GetProducts();
     }
 }

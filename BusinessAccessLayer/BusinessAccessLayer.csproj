@@ -50,10 +50,13 @@
   <ItemGroup>
     <Compile Include="DTO\ProductDTO.cs" />
     <Compile Include="DTO\ShippingDTO.cs" />
+    <Compile Include="Facade.cs" />
     <Compile Include="Infrastructure\ServiceModule .cs" />
     <Compile Include="Infrastructure\ValidationException.cs" />
+    <Compile Include="Interfaces\IProductService.cs" />
     <Compile Include="Interfaces\IShippingService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ProductService.cs" />
     <Compile Include="Services\ShippingService.cs" />
   </ItemGroup>
   <ItemGroup>
