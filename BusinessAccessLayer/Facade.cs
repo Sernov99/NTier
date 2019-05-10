@@ -1,15 +1,11 @@
 ﻿using BusinessAccessLayer.DTO;
 using BusinessAccessLayer.Infrastructure;
 using BusinessAccessLayer.Services;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BusinessAccessLayer
 {
-   public class Facade
+    public class Facade
     {
         private ShippingService srv_ship;
         private ProductService srv_prod;
@@ -38,8 +34,7 @@ namespace BusinessAccessLayer
             };
 
             try
-            {
-               
+            {           
                 srv_ship.MakeShipping(shp);
                 return "Done!";
             }

@@ -1,10 +1,6 @@
 ﻿using BusinessAccessLayer;
-using BusinessAccessLayer.DTO;
-using BusinessAccessLayer.Infrastructure;
 using BusinessAccessLayer.Services;
-using Ninject.Modules;
 using System;
-using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace NLayered
@@ -27,14 +23,31 @@ namespace NLayered
 
         private void button1_Click(object sender, EventArgs e)
         {
+           
             try {
                 
                label5.Text = BL.MakeShipping(textBox_address.Text, textBox_fn.Text, textBox_ln.Text, BL.product_list().Find(x => x.Name == comboBox1.SelectedItem.ToString()).ID);
-                //label5.Text = BL.product_list().Find(x => x.Name == comboBox1.SelectedItem.ToString()).ID.ToString();
             }
             catch
             {
                 label5.Text = "Empty Product ID!";
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.Filter = "JSON files|*.json";
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    //Get the path of specified file
+                    string filePath = openFileDialog.FileName;
+
+                    ShippingFromJSONAdapter j = new ShippingFromJSONAdapter(ShippingService.getInstance(connectionString));
+                    label5.Text = j.MakeShipping(filePath);
+
+                }
             }
         }
     }

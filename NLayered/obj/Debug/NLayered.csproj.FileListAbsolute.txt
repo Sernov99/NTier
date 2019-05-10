@@ -52,3 +52,5 @@ C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\Patterns\NLayered\NLayered\obj\Debug\NL
 C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\Patterns\NLayered\NLayered\obj\Debug\NLayered.Form1.resources
 C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\Patterns\NLayered\NLayered\obj\Debug\NLayered.Properties.Resources.resources
 C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\Patterns\NLayered\NLayered\obj\Debug\NLayered.csproj.GenerateResource.Cache
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\Patterns\NLayered\NLayered\bin\Debug\Newtonsoft.Json.dll
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\Patterns\NLayered\NLayered\bin\Debug\Newtonsoft.Json.xml
