@@ -31,14 +31,31 @@ namespace DataAccessLayer.Repositories
 
         public Shipping Get(int id)
         {
-            throw new NotImplementedException();
+            Shipping result = new Shipping();
+
+            try
+            {
+                string comm = "SELECT address FROM tbl_shippings WHERE id = " + id.ToString();
+                result.Address = db.Get(comm);
+                comm = "SELECT firstname FROM tbl_shippings WHERE id = " + id.ToString();
+                result.FirstName = db.Get(comm);
+                comm = "SELECT lastname FROM tbl_shippings WHERE id = " + id.ToString();
+                result.LastName = db.Get(comm);
+                comm = "SELECT product_id FROM tbl_shippings WHERE id = " + id.ToString();
+                result.Product_id = Int32.Parse(db.Get(comm));
+                return result;
+            }
+            catch
+            {
+                return null;
+            }
         }
 
         public List<Shipping> GetAll()
         {
             List<Shipping> result = new List<Shipping>();
 
-            MySqlDataReader dr = db.GetAll();
+            MySqlDataReader dr = db.GetAll("tbl_shippings");
             if (dr.HasRows)
             {
                 int count = dr.FieldCount;

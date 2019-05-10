@@ -31,6 +31,17 @@ namespace BusinessAccessLayer.Services
             return tmp;
         }
 
+        public ShippingDTO GetShipping(int id)
+        {
+            ShippingDTO tmp = new ShippingDTO();
+            tmp.Address = DataBase.Shippings.Get(id).Address;
+            tmp.FirstName = DataBase.Shippings.Get(id).FirstName;
+            tmp.LastName = DataBase.Shippings.Get(id).LastName;
+            tmp.Product_id = DataBase.Shippings.Get(id).Product_id;
+            return tmp;
+
+        }
+
         public List<ProductDTO> GetProducts()
         {
         
@@ -46,9 +57,28 @@ namespace BusinessAccessLayer.Services
             }
 
             return all_products_result;
-
-
                 
+        }
+
+        public List<ShippingDTO> GetShippings()
+        {
+
+            List<ShippingDTO> all__result = new List<ShippingDTO>();
+
+            for (var i = 0; i < DataBase.Shippings.GetAll().Count; i++)
+            {
+
+                ShippingDTO tmp = new ShippingDTO();
+                
+                tmp.Address = DataBase.Shippings.GetAll()[i].Address;
+                tmp.FirstName = DataBase.Shippings.GetAll()[i].FirstName;
+                tmp.LastName = DataBase.Shippings.GetAll()[i].LastName;
+                tmp.Product_id = DataBase.Shippings.GetAll()[i].Product_id;
+                all__result.Add(tmp);
+            }
+
+            return all__result;
+
         }
 
         public void MakeShipping(ShippingDTO shippingDto)
@@ -64,7 +94,7 @@ namespace BusinessAccessLayer.Services
             newshp.Product_id = shippingDto.Product_id;
             if (shippingDto.FirstName == "")
             {
-                throw new ValidationException("Error phone First Name!", "");
+                throw new ValidationException("Error First Name!", "");
             }
             if (shippingDto.LastName== "")
             {

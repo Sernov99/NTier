@@ -40,9 +40,9 @@ namespace DataAccessLayer.EF
             string res = cmd.ExecuteScalar().ToString();
             return res;
         }
-        public MySqlDataReader GetAll()
+        public MySqlDataReader GetAll(string tablename)
         {
-            MySqlCommand cmd = new MySqlCommand("SELECT * from tbl_products", conn);
+            MySqlCommand cmd = new MySqlCommand("SELECT * from " + tablename, conn);
             MySqlDataReader res = cmd.ExecuteReader();
             return res;
         }

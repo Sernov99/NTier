@@ -47,7 +47,7 @@ namespace DataAccessLayer.Repositories
         {
             List<Product> result = new List<Product>();
   
-            MySqlDataReader dr = db.GetAll();
+            MySqlDataReader dr = db.GetAll("tbl_products");
             if (dr.HasRows)
             {
                 int count = dr.FieldCount;

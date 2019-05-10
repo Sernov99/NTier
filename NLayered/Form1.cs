@@ -30,7 +30,7 @@ namespace NLayered
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            
            ShippingDTO shp = new ShippingDTO();
             try {
                 shp.Address = textBox_address.Text;
@@ -47,8 +47,9 @@ namespace NLayered
             }
             catch (ValidationException ex){
                 label5.Text = ex.Message;
-                return;
+               
             }
+           
 
         }
     }

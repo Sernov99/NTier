@@ -45,7 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EF\DBContext.cs" />
+    <Compile Include="DB\DBContext.cs" />
     <Compile Include="Enteties\Product.cs" />
     <Compile Include="Enteties\Shipping.cs" />
     <Compile Include="Interfaces\IRepository.cs" />

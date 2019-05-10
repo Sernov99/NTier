@@ -19,3 +19,10 @@ C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\DataAccessLayer\bin\Debug\
 C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
 C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\4.2\NLayered\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\6\NLayered\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\6\NLayered\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\6\NLayered\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\6\NLayered\DataAccessLayer\bin\Debug\MySql.Data.dll
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\6\NLayered\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\6\NLayered\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\6\NLayered\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
