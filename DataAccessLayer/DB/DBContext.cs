@@ -34,7 +34,7 @@ namespace DataAccessLayer.EF
             cmd.ExecuteScalar();
         }
 
-        public string Get(string comm)
+        virtual public string Get(string comm)
         {
             MySqlCommand cmd = new MySqlCommand(comm, conn);
             string res = cmd.ExecuteScalar().ToString();

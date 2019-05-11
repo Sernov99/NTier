@@ -54,3 +54,8 @@ C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\Patterns\NLayered\NLayered\obj\Debug\NL
 C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\Patterns\NLayered\NLayered\obj\Debug\NLayered.csproj.GenerateResource.Cache
 C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\Patterns\NLayered\NLayered\bin\Debug\Newtonsoft.Json.dll
 C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\Patterns\NLayered\NLayered\bin\Debug\Newtonsoft.Json.xml
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\Patterns\NLayered\NLayered\bin\Debug\Castle.Core.dll
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\Patterns\NLayered\NLayered\bin\Debug\Moq.dll
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\Patterns\NLayered\NLayered\bin\Debug\Castle.Core.xml
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\Patterns\NLayered\NLayered\bin\Debug\Moq.pdb
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\Patterns\NLayered\NLayered\bin\Debug\Moq.xml

@@ -4,6 +4,7 @@ using DataAccessLayer.Interfaces;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,18 +27,20 @@ namespace DataAccessLayer.Repositories
 
         public Product Get(int id)
         {
-                Product result = new Product();
-
+            Product result = new Product() { ID = 0, Name = "" };
+           
             try {
-                string comm = "SELECT id FROM tbl_products WHERE id = " + id.ToString();
+                string comm = "SELECT id FROM tbl_products WHERE id = " + id.ToString();            
                 result.ID = Int32.Parse(db.Get(comm));
-                comm = "SELECT name FROM tbl_products WHERE id =" + id.ToString();
+                comm = "SELECT name FROM tbl_products WHERE id = " + id.ToString();
                 result.Name = db.Get(comm);
+                Trace.Write(result.ID.ToString());
                 return result;
             }
             catch
             {
-                return null;
+                
+                return result;
             }
             
            

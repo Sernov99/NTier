@@ -10,10 +10,11 @@ using DataAccessLayer.Repositories;
 
 namespace BusinessAccessLayer.Services
 {
-    public class ProductService : IProductService
+    public class ProductService : Interfaces.IProductService
     {
         IUnitOfWork DataBase { get; set; }
         private static ProductService instance;
+
 
         private ProductService(string connectionStr)
         {
@@ -26,7 +27,7 @@ namespace BusinessAccessLayer.Services
             return instance;
         }
 
-        public List<ProductDTO> GetProducts()
+        virtual public List<ProductDTO> GetProducts()
         {
             List<ProductDTO> all_products_result = new List<ProductDTO>();
 

@@ -17,7 +17,7 @@ namespace BusinessAccessLayer
             srv_prod = srv_pr;
         }
 
-        public List<ProductDTO> product_list()
+        virtual public List<ProductDTO> product_list()
         {
             if(lproducts == null)
             {

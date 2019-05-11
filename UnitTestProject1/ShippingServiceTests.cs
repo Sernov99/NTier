@@ -1,10 +1,15 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using BusinessAccessLayer.Services;
 using BusinessAccessLayer.DTO;
 using System.Diagnostics;
 using System.Collections.Generic;
 using BusinessAccessLayer.Infrastructure;
+using DataAccessLayer.Interfaces;
+using Moq;
+using DataAccessLayer.Repositories;
+using DataAccessLayer.Enteties;
+using BusinessAccessLayer;
+using DataAccessLayer.EF;
 
 namespace UnitTestProject1
 {
@@ -13,9 +18,9 @@ namespace UnitTestProject1
     {
         static string connectionString = "datasource=10.8.0.1;port=3306;username=for_progs;password=;database=Shipping_mon;";
 
- 
         ShippingService srv = ShippingService.getInstance(connectionString);
         ProductService srv1 = ProductService.getInstance(connectionString);
+
         [TestMethod]
         public void TestShippingCreate()
         {
@@ -68,7 +73,6 @@ namespace UnitTestProject1
             shp.FirstName = "d";
             shp.LastName = "4";
             
-
             //ACT
             try
             {
@@ -86,5 +90,36 @@ namespace UnitTestProject1
             Assert.Fail();
             
         }
+
+        [TestMethod]
+        public void MoqProdRepoTest()
+        {
+            // Arrange
+            var mock = new Mock<DBContext>(connectionString);
+            List<Product> test_list = new List<Product>
+            {
+                new Product() {ID = 1, Name = "First" },
+                 new Product() {ID = 2, Name = "Second" },
+                 new Product() {ID = 1, Name = "Third" },
+            };
+
+            string sql_command = "SELECT id FROM tbl_products WHERE id = 1";
+            string sql_command1 = "SELECT name FROM tbl_products WHERE id = 1";
+            string result_name = "Product 1";
+            mock.Setup(a => a.Get(sql_command)).Returns("1");
+            mock.Setup(a => a.Get(sql_command1)).Returns(result_name);
+
+            Facade facade = new Facade(ShippingService.getInstance(connectionString), ProductService.getInstance(connectionString));          
+
+            //Act
+            ProductRepository pr = new ProductRepository(mock.Object);
+            Trace.WriteLine(pr.Get(1));
+
+            //Assert
+            Assert.AreEqual(pr.Get(1).ID, 1);
+
+
+        }
     }
+
 }

@@ -26,3 +26,12 @@ C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\Patterns\NLayered\UnitTestProject1\bin\
 C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\Patterns\NLayered\UnitTestProject1\obj\Debug\UnitTestProject1.csprojResolveAssemblyReference.cache
 C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\Patterns\NLayered\UnitTestProject1\obj\Debug\UnitTestProject1.dll
 C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\Patterns\NLayered\UnitTestProject1\obj\Debug\UnitTestProject1.pdb
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\Patterns\NLayered\UnitTestProject1\bin\Debug\Castle.Core.dll
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\Patterns\NLayered\UnitTestProject1\bin\Debug\Moq.dll
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\Patterns\NLayered\UnitTestProject1\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\Patterns\NLayered\UnitTestProject1\bin\Debug\System.ValueTuple.dll
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\Patterns\NLayered\UnitTestProject1\bin\Debug\Castle.Core.xml
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\Patterns\NLayered\UnitTestProject1\bin\Debug\Moq.pdb
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\Patterns\NLayered\UnitTestProject1\bin\Debug\Moq.xml
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\Patterns\NLayered\UnitTestProject1\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\sn\Desktop\CLOUD_PI\КПИ\ПО\Patterns\NLayered\UnitTestProject1\bin\Debug\System.ValueTuple.xml
