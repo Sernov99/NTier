@@ -27,9 +27,9 @@ namespace DataAccessLayer.Repositories
 
         public Product Get(int id)
         {
-            Product result = new Product() { ID = 0, Name = "" };
-           
+                 
             try {
+                Product result = new Product() { };
                 string comm = "SELECT id FROM tbl_products WHERE id = " + id.ToString();            
                 result.ID = Int32.Parse(db.Get(comm));
                 comm = "SELECT name FROM tbl_products WHERE id = " + id.ToString();
@@ -40,7 +40,7 @@ namespace DataAccessLayer.Repositories
             catch
             {
                 
-                return result;
+                return null;
             }
             
            
