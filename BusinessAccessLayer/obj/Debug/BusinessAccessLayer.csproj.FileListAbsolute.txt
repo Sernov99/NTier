@@ -53,3 +53,19 @@ C:\Users\User\ownCloud\КПИ\ПО\Patterns\NLayered\BusinessAccessLayer\obj\Deb
 C:\Users\User\ownCloud\КПИ\ПО\Patterns\NLayered\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.csproj.CopyComplete
 C:\Users\User\ownCloud\КПИ\ПО\Patterns\NLayered\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.dll
 C:\Users\User\ownCloud\КПИ\ПО\Patterns\NLayered\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.pdb
+C:\Users\User\Google Диск\КПИ\ПО\Patterns\NLayered\BusinessAccessLayer\bin\Debug\BusinessAccessLayer.dll
+C:\Users\User\Google Диск\КПИ\ПО\Patterns\NLayered\BusinessAccessLayer\bin\Debug\BusinessAccessLayer.pdb
+C:\Users\User\Google Диск\КПИ\ПО\Patterns\NLayered\BusinessAccessLayer\bin\Debug\AutoMapper.dll
+C:\Users\User\Google Диск\КПИ\ПО\Patterns\NLayered\BusinessAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\User\Google Диск\КПИ\ПО\Patterns\NLayered\BusinessAccessLayer\bin\Debug\Ninject.dll
+C:\Users\User\Google Диск\КПИ\ПО\Patterns\NLayered\BusinessAccessLayer\bin\Debug\MySql.Data.dll
+C:\Users\User\Google Диск\КПИ\ПО\Patterns\NLayered\BusinessAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\User\Google Диск\КПИ\ПО\Patterns\NLayered\BusinessAccessLayer\bin\Debug\DataAccessLayer.dll.config
+C:\Users\User\Google Диск\КПИ\ПО\Patterns\NLayered\BusinessAccessLayer\bin\Debug\AutoMapper.pdb
+C:\Users\User\Google Диск\КПИ\ПО\Patterns\NLayered\BusinessAccessLayer\bin\Debug\AutoMapper.xml
+C:\Users\User\Google Диск\КПИ\ПО\Patterns\NLayered\BusinessAccessLayer\bin\Debug\Ninject.xml
+C:\Users\User\Google Диск\КПИ\ПО\Patterns\NLayered\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.csprojAssemblyReference.cache
+C:\Users\User\Google Диск\КПИ\ПО\Patterns\NLayered\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\User\Google Диск\КПИ\ПО\Patterns\NLayered\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.csproj.CopyComplete
+C:\Users\User\Google Диск\КПИ\ПО\Patterns\NLayered\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.dll
+C:\Users\User\Google Диск\КПИ\ПО\Patterns\NLayered\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.pdb

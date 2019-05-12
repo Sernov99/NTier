@@ -119,6 +119,23 @@ namespace UnitTestProject1
 
 
         }
+        [TestMethod]
+        public void ShippingFactoryDetails()
+        {
+            //Arrange
+            Shipping shp = new Shipping();
+            string testString = "QA Tester";
+            shp.FirstName = testString;
+
+            //Act
+            List<ShippingDetail> list = shp.shippingDetails;
+            ShippingNameDetails nd = (ShippingNameDetails)list[0];
+
+            //Assert
+            Assert.AreEqual(nd.FirstName, testString);
+
+        }
+
     }
 
 }
