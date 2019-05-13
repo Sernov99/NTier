@@ -1,14 +1,9 @@
 ﻿using BusinessAccessLayer.Interfaces;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using BusinessAccessLayer.DTO;
 using DataAccessLayer.Enteties;
 using DataAccessLayer.Repositories;
 using BusinessAccessLayer.Infrastructure;
-using AutoMapper;
 using DataAccessLayer.Interfaces;
 
 namespace BusinessAccessLayer.Services

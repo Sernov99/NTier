@@ -1,5 +1,6 @@
 ﻿using BusinessAccessLayer.DTO;
 using BusinessAccessLayer.Infrastructure;
+using BusinessAccessLayer.Iterators;
 using BusinessAccessLayer.Services;
 using System.Collections.Generic;
 
@@ -25,6 +26,18 @@ namespace BusinessAccessLayer
                 return lproducts;
             }
             return lproducts;
+        }
+
+        public ProductCollection products_collection()
+        {
+            var _collection = new ProductCollection();
+
+            foreach (var item in product_list())
+            {
+                _collection.AddItem(item);
+            }
+            return _collection;
+
         }
 
         public string MakeShipping(string address, string fn, string ln, int pr_id)

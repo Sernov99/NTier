@@ -1,4 +1,5 @@
 ﻿using BusinessAccessLayer;
+using BusinessAccessLayer.DTO;
 using BusinessAccessLayer.Services;
 using System;
 using System.Windows.Forms;
@@ -8,17 +9,25 @@ namespace NLayered
     public partial class Form1 : Form
     {
         static string connectionString = "datasource=10.8.0.1;port=3306;username=for_progs;password=;database=Shipping_mon;";
-        Facade BL = new Facade(ShippingService.getInstance(connectionString), ProductService.getInstance(connectionString));
+        readonly Facade BL = new Facade(ShippingService.getInstance(connectionString), ProductService.getInstance(connectionString));
 
         public Form1()
         {
             InitializeComponent();
 
-            foreach (var item in BL.product_list())
+            var _product_collection = BL.products_collection();
+            //_product_collection.ReverseDirection();
+
+            /*foreach (var item in BL.product_list())
+            {
+                comboBox1.Items.Add(item.Name);
+            }*/
+
+            foreach (ProductDTO item in _product_collection)
             {
                 comboBox1.Items.Add(item.Name);
             }
-            
+
         }
 
         private void button1_Click(object sender, EventArgs e)

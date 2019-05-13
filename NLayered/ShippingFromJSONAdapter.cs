@@ -1,13 +1,7 @@
-﻿using BusinessAccessLayer;
-using BusinessAccessLayer.DTO;
+﻿using BusinessAccessLayer.DTO;
 using BusinessAccessLayer.Infrastructure;
 using BusinessAccessLayer.Services;
 using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NLayered
 {

@@ -23,13 +23,15 @@ namespace UnitTestProject1
         [TestMethod]
         public void TestShippingCreate()
         {
-            ShippingDTO shp = new ShippingDTO();
             // Arrange
-            shp.Address = "dddddddd";
-            shp.FirstName = "SSSSSS";
-            shp.LastName = "SSSSSS";
-            shp.Product_id = 2;
-            
+            ShippingDTO shp = new ShippingDTO()
+            {
+                Address = "dddddd",
+                FirstName = "Asdasdad",
+                LastName = "das",
+                Product_id = 2,
+            };
+                   
             int num = srv.GetShippings().Count;
             // Act
             srv.MakeShipping(shp);
